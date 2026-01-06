@@ -1,9 +1,31 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-
 import svelte from '@astrojs/svelte';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [svelte()]
+  // TODO: Replace with your actual production domain
+  site: 'https://your-domain.com',
+  integrations: [
+    svelte(),
+    sitemap({
+      // Customize priorities for important pages
+      serialize(item) {
+        // Homepage gets highest priority
+        if (item.url === 'https://your-domain.com/') {
+          item.priority = 1.0;
+        }
+        // FAQ and Help pages are important
+        else if (item.url.includes('/faq') || item.url.includes('/help')) {
+          item.priority = 0.8;
+        }
+        // Default priority for other pages
+        else {
+          item.priority = 0.7;
+        }
+        return item;
+      },
+    }),
+  ],
 });
