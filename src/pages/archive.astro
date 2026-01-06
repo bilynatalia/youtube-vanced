@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DownloadButton from '../components/DownloadButton.svelte';
+---
+
+<Layout 
+    title="Archive - Vanced Official"
+    description="Download older versions of Vanced and ReVanced."
+    currentPath="/archive"
+>
+    <h2 class="page-title">Archive</h2>
+    <div class="box-shadow-full">
+        <p class="content-text">Here you can find older versions of Vanced and ReVanced.</p>
+        <div class="button-group text-center">
+            <DownloadButton 
+                href="#"
+                label="Vanced v14.21.54 (Legacy)"
+            />
+            <DownloadButton 
+                href="#"
+                label="ReVanced v19.x Series"
+            />
+        </div>
+    </div>
+</Layout>
