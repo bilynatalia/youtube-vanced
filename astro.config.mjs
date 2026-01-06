@@ -6,14 +6,14 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   // TODO: Replace with your actual production domain
-  site: 'https://your-domain.com',
+  site: 'https://youtubvanced.org/',
   integrations: [
     svelte(),
     sitemap({
       // Customize priorities for important pages
       serialize(item) {
         // Homepage gets highest priority
-        if (item.url === 'https://your-domain.com/') {
+        if (item.url === 'https://youtubvanced.org/') {
           item.priority = 1.0;
         }
         // FAQ and Help pages are important
