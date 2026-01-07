@@ -1,50 +1,60 @@
 ---
-import Nav from '../components/Nav.svelte';
-import Footer from '../components/Footer.svelte';
-import '../styles/global.css';
+import Nav from "../components/Nav.svelte";
+import Footer from "../components/Footer.svelte";
+import "../styles/global.css";
 
 export interface Props {
-    title?: string;
-    description?: string;
-    currentPath?: string;
+  title?: string;
+  description?: string;
+  currentPath?: string;
 }
 
-const { 
-    title = 'Vanced Official - Revanced APK Download',
-    description = 'Continuing the legacy of Vanced. Download the latest Revanced Manager, YouTube Vanced, and Music Vanced APK without Ads. Enjoy unlimited videos.',
-    currentPath = '/'
+const {
+  title = "YOUTUBE VANCED 2026 - Youtube Vanced Official - Revanced APK Download",
+  description = "Download Youtube Vanced 2026 APK - The best ad-free YouTube experience. Get Revanced Manager, YouTube Vanced v20.14.43 & Music Vanced for Android. Free, safe & official.",
+  currentPath = "/",
 } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
-    <meta name="description" content={description}>
-    
+    <meta name="description" content={description} />
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://z-cdn-media.chatglm.cn/files/9f4b7762-ff85-415c-a278-8a616914d4df.png?auth_key=1867683445-e151a0e2b9cb4026a88d17cc569744a5-0-73870e74fdfd32b50269b86c10c14b7e">
-    
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://z-cdn-media.chatglm.cn/files/9f4b7762-ff85-415c-a278-8a616914d4df.png?auth_key=1867683445-e151a0e2b9cb4026a88d17cc569744a5-0-73870e74fdfd32b50269b86c10c14b7e"
+    />
+
     <!-- Canonical URL -->
-<!-- Canonical URL -->
-    <link rel="canonical" href={`https://youtubvanced.org${currentPath === '/' ? '' : currentPath}`}>
-    
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href={`https://youtubvanced.org${currentPath === "/" ? "" : currentPath}`}
+    />
+
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <Nav currentPath={currentPath} client:load />
-    
+
     <main>
-        <div class="section-container">
-            <slot />
-        </div>
+      <div class="section-container">
+        <slot />
+      </div>
     </main>
-    
+
     <Footer client:load />
-</body>
+  </body>
 </html>

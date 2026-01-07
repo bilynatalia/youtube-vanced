@@ -6,6 +6,6 @@
         <a href="/help">Help</a>
     </div>
     <div class="copyright">
-        &copy; 2025 Vanced Official. All rights reserved.
+        &copy; 2026 Youtube Vanced Official. All rights reserved.
     </div>
 </footer>

@@ -1,56 +1,199 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import DownloadButton from '../components/DownloadButton.svelte';
+import Layout from "../layouts/Layout.astro";
+import DownloadButton from "../components/DownloadButton.svelte";
+import InfoCard from "../components/InfoCard.svelte";
 ---
 
 <Layout currentPath="/">
-    <header class="hero">
-        <div class="hero-image-container">
-            <img src="https://z-cdn-media.chatglm.cn/files/5bc34a1e-3cda-4e4e-9b2e-959896e37f6e.png?auth_key=1867682405-699242e788e44eb7bc92e0a1043e4e0a-0-3897d7359491972e15c2e95ae1ae446a" alt="Vanced Play Icon">
-        </div>
-        <h1 class="hero-title">Enjoy Unlimited YT<br>videos without Ads!</h1>
-        <p class="hero-subtitle">Continuing the legacy of the best YouTube experience.</p>
-    </header>
-
-    <div class="box-shadow-full">
-        <p class="d-description text-center">Continuing the legacy of <span class="vanced--gradient">Vanced</span></p>
-        <p class="d-description text-center">Download Revanced manager then install according to the instructions in the app</p>
-        <p class="d-description text-center">You can also download and install it manually</p>
-        
-        <div class="button-group text-center">
-            <DownloadButton 
-                href="https://github.com/vancedapps/vanced.to/releases/download/2025-51/vanced.to_revanced_manager_plus_v3.0.22.apk"
-                label="Revanced Manager (3.0.22)"
-                variant="primary"
-            />
-            
-            <br/>
-            <p class="d-description text-center my-1">Need offline version without Vanced Manager?</p>
-
-            <DownloadButton 
-                href="https://github.com/vancedapps/vanced.to/releases/download/2025-24/vanced.to_vanced_gms_microg_v0.3.1.4.240913.apk"
-                label="microG APK (0.3.1.4.240913)"
-                sublabel="Arch: All"
-            />
-
-            <DownloadButton 
-                href="https://github.com/vancedapps/vanced.to/releases/download/2026-2/vanced.to_vanced_youtube_v20.14.43_cli5.0.2.2_p5.48.0.8.apk"
-                label="Youtube Vanced APK (20.14.43)"
-                sublabel="Arch: All"
-            />
-
-            <DownloadButton 
-                href="https://github.com/vancedapps/vanced.to/releases/download/2025-37/vanced.to_vanced_youtube_music_arm64_v8a_v8.36.51_cli5.0.2.2_p5.36.0.1.apk"
-                label="Youtube Music Vanced APK (8.36.51)"
-                sublabel="Arch: arm64"
-            />
-
-            <DownloadButton 
-                href="https://github.com/vancedapps/vanced.to/releases/download/2025-37/vanced.to_vanced_youtube_music_armeabi_v7a_v8.36.51_cli5.0.2.2_p5.36.0.1.apk"
-                label="Youtube Music Vanced APK (8.36.51)"
-                sublabel="Arch: armeabi"
-            />
-        </div>
-        <p class="d-description text-center" style="margin-top: 20px;">Looking for <a href="/archive" style="text-decoration: underline;"><i>older versions?</i></a></p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-image-container">
+      <img
+        src="https://z-cdn-media.chatglm.cn/files/5bc34a1e-3cda-4e4e-9b2e-959896e37f6e.png?auth_key=1867682405-699242e788e44eb7bc92e0a1043e4e0a-0-3897d7359491972e15c2e95ae1ae446a"
+        alt="Youtube Vanced 2026 APK Logo"
+        width="100"
+        height="100"
+        loading="eager"
+      />
     </div>
+    <h1 class="hero-title">Youtube Vanced 2026<br />Ad-Free YouTube!</h1>
+    <p class="hero-subtitle">
+      Download the best YouTube Vanced APK for Android - No ads, background
+      play, and more.
+    </p>
+  </header>
+
+  <!-- Download Section -->
+  <section class="box-shadow-full" aria-label="Download Youtube Vanced 2026">
+    <h2 class="section-title text-center">Download Youtube Vanced 2026 APK</h2>
+    <p class="d-description text-center">
+      Get the latest <span class="vanced--gradient">Youtube Vanced</span> for Android
+    </p>
+    <p class="d-description text-center">
+      Download Revanced Manager and install with one click, or install manually.
+    </p>
+
+    <div class="button-group text-center">
+      <DownloadButton
+        href="https://github.com/vancedapps/vanced.to/releases/download/2025-51/vanced.to_revanced_manager_plus_v3.0.22.apk"
+        label="Revanced Manager (3.0.22)"
+        variant="primary"
+      />
+
+      <br />
+      <p class="d-description text-center my-1">
+        Manual installation (without Manager):
+      </p>
+
+      <DownloadButton
+        href="https://github.com/vancedapps/vanced.to/releases/download/2025-24/vanced.to_vanced_gms_microg_v0.3.1.4.240913.apk"
+        label="microG APK (0.3.1.4.240913)"
+        sublabel="Required for login"
+      />
+
+      <DownloadButton
+        href="https://github.com/vancedapps/vanced.to/releases/download/2026-2/vanced.to_vanced_youtube_v20.14.43_cli5.0.2.2_p5.48.0.8.apk"
+        label="Youtube Vanced APK (20.14.43)"
+        sublabel="Arch: All"
+      />
+
+      <DownloadButton
+        href="https://github.com/vancedapps/vanced.to/releases/download/2025-37/vanced.to_vanced_youtube_music_arm64_v8a_v8.36.51_cli5.0.2.2_p5.36.0.1.apk"
+        label="Youtube Music Vanced (8.36.51)"
+        sublabel="Arch: arm64"
+      />
+
+      <DownloadButton
+        href="https://github.com/vancedapps/vanced.to/releases/download/2025-37/vanced.to_vanced_youtube_music_armeabi_v7a_v8.36.51_cli5.0.2.2_p5.36.0.1.apk"
+        label="Youtube Music Vanced (8.36.51)"
+        sublabel="Arch: armeabi"
+      />
+    </div>
+    <p class="d-description text-center" style="margin-top: 20px;">
+      Looking for <a href="/archive" style="text-decoration: underline;"
+        ><i>older versions?</i></a>
+    </p>
+  </section>
+
+  <!-- What is Youtube Vanced Section -->
+  <section
+    class="box-shadow-full"
+    aria-label="What is Youtube Vanced"
+    style="margin-top: 30px;"
+  >
+    <h2 class="section-title text-center">What is Youtube Vanced 2026?</h2>
+    <p class="content-text">
+      <strong>Youtube Vanced 2026</strong> is a modified version of the official YouTube
+      app for Android that provides an enhanced, ad-free viewing experience. Originally
+      developed as "Vanced," this project continues the legacy by offering features
+      that YouTube Premium users enjoy - completely free.
+    </p>
+    <p class="content-text">
+      With Youtube Vanced APK, you can watch videos without interruptions, play
+      videos in the background while using other apps, and enjoy a cleaner
+      interface. It's the go-to solution for millions of Android users who want
+      a better YouTube experience in 2026.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section
+    class="box-shadow-full"
+    aria-label="Youtube Vanced Features"
+    style="margin-top: 30px;"
+  >
+    <h2 class="section-title text-center">Youtube Vanced 2026 Features</h2>
+    <div class="features-grid">
+      <InfoCard title="🚫 Ad-Free Experience" borderColor="var(--accent-red)">
+        Block all video ads, banner ads, and pop-ups. Watch YouTube without any
+        interruptions or waiting for "Skip Ad" buttons.
+      </InfoCard>
+
+      <InfoCard title="🎵 Background Playback" borderColor="var(--accent-blue)">
+        Continue listening to music and videos even when your screen is off or
+        while using other apps on your Android device.
+      </InfoCard>
+
+      <InfoCard title="📱 Picture-in-Picture (PiP)" borderColor="#9c27b0">
+        Watch videos in a floating window while multitasking. Browse other apps
+        without stopping your video.
+      </InfoCard>
+
+      <InfoCard title="🎨 Customizable Themes" borderColor="#4caf50">
+        Choose from various themes including pure black AMOLED mode to save
+        battery on OLED screens.
+      </InfoCard>
+
+      <InfoCard title="⏭️ SponsorBlock Integration" borderColor="#ff9800">
+        Automatically skip sponsored segments, intros, outros, and other
+        non-content parts of videos.
+      </InfoCard>
+
+      <InfoCard title="🔒 Safe & Secure" borderColor="#00bcd4">
+        Open-source and community-driven. Download from official sources only.
+        No malware or tracking.
+      </InfoCard>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section
+    class="box-shadow-full"
+    aria-label="Frequently Asked Questions"
+    style="margin-top: 30px;"
+  >
+    <h2 class="section-title text-center">Frequently Asked Questions</h2>
+
+    <InfoCard title="Is Youtube Vanced 2026 safe to use?">
+      Yes, Youtube Vanced is safe when downloaded from official sources like
+      this website. It's open-source and has been used by millions of users
+      worldwide. We recommend only downloading from trusted sources.
+    </InfoCard>
+
+    <InfoCard title="Do I need to root my Android device?">
+      No, root access is not required. Youtube Vanced 2026 works on non-rooted
+      Android devices. Simply download the APK and MicroG, then install both
+      apps.
+    </InfoCard>
+
+    <InfoCard title="What is MicroG and why do I need it?">
+      MicroG is a free implementation of Google's proprietary libraries. It
+      allows you to sign in to your Google account in Youtube Vanced without
+      having the official Google Play Services dependency.
+    </InfoCard>
+
+    <InfoCard title="Will Youtube Vanced work on my Android phone?">
+      Youtube Vanced 2026 supports Android 8.0 (Oreo) and above. It works on
+      most Android smartphones and tablets including Samsung, Xiaomi, OnePlus,
+      and other brands.
+    </InfoCard>
+
+    <InfoCard title="How do I update Youtube Vanced?">
+      Visit this page regularly to check for updates. Download the latest APK
+      version and install it over your existing installation. Your settings and
+      login will be preserved.
+    </InfoCard>
+  </section>
 </Layout>
+
+<style>
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background: var(--gradient-vanced);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .features-grid {
+    display: grid;
+    gap: 15px;
+  }
+
+  @media (min-width: 600px) {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
